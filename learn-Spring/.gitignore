@@ -1,6 +1,5 @@
 /target
 *.class
-/.gitignore
 /.DS_Store
 /log/
 /logs/
