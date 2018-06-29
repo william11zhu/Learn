@@ -85,7 +85,8 @@ public class Sort {
 	 * 3、遍历待排序列，
 	 * 4、当前遍历到的值为val，将temp中下标为val位置的值加1
 	 * 5、定义一个指针指向data的初始位置
-	 * 6、遍历temp，若temp中的值大于0，则将当前temp下标k放入data数组中，向后移动指针
+	 * 6、遍历temp，若temp中的值大于0，则将当前temp下标k放入data数组中，temp中的元素减1，直到temp中的元素等于0
+	 * 7、向后移动指针
 	 * 时间复杂度：O(n)
 	 * 空间复杂度:O(n)
 	 * @param data

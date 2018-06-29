@@ -1,5 +1,8 @@
 package com.learn.array;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class RepeatNumber {
 	
 	/**
@@ -32,6 +35,49 @@ public class RepeatNumber {
 		}
 		return false;
 	}
+	
+	/**
+	 * 不修改数组，找出重复的数字
+	 * 数组长度为n，数字范围为0~n-1
+	 * 
+	 * 分析：计数排序的思想
+	 * 时间复杂度：O(n)
+	 * 空间复杂度:O(n)
+	 * @param nums
+	 * @return
+	 */
+	public int getDuplication2(int[] nums){
+		if(nums == null || nums.length == 0){
+			return -1;
+		}
+		int[] buck = new int[nums.length];
+		for(int i=0;i<nums.length;i++){
+			if(buck[nums[i]] > 1){
+				return nums[i];
+			}
+			buck[nums[i]]++;
+		}
+		return -1;
+	}
+	
+	public List<Integer> getRepeatDuplication(int[] nums){
+		if(nums == null || nums.length == 0){
+			return null;
+		}
+		int[] bucket = new int[nums.length];
+		for(int i=0;i<nums.length;i++){
+			bucket[nums[i]]++;
+		}
+		
+		List<Integer> result = new ArrayList<Integer>();
+		for(int i=0;i<bucket.length;i++){
+			if(bucket[nums[i]]>1){
+				result.add(nums[i]);
+			}
+		}
+		return result;
+	}
+	
 	
 	/**
 	 * 不修改数组，找出重复的数字
@@ -87,6 +133,6 @@ public class RepeatNumber {
 		int[] nums = {2,3,1,4,2,5,3};
 		rn.duplicate(nums);
 		nums = new int[]{2,3,5,4,3,2,6,7};
-		rn.getDuplication(nums);
+		rn.getDuplication2(nums);
 	}
 }
