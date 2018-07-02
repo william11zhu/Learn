@@ -221,6 +221,29 @@ public class ListQuestions {
 		return len;
 	}
 	
+	public Node getIntersectNode(Node head1,Node head2){
+		int len1 = length(head1);
+		int len2 = length(head2);
+		if(len1 > len2){
+			for(int i=0;i<len1-len2;i++){
+				head1 = head1.next;
+			}
+		}else{
+			for(int i=0;i<len2-len1;i++){
+				head2 = head2.next;
+			}
+		}
+		
+		while(head1 != null){
+			if(head1 == head2){
+				return head1;
+			}
+			head1=head1.next;
+			head2=head2.next;
+		}
+		return null;
+	}
+	
 	public static void main(String... args){
 		ListQuestions lq = new ListQuestions();
 		for(int i=1;i <10;i++){
