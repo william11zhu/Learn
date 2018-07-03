@@ -127,7 +127,7 @@ public class RepeatNumber {
 		}
 		return count;
 	}
-	//[0,1,2,2,3,3,5]
+	
 	public static void main(String... args){
 		RepeatNumber rn = new RepeatNumber();
 		int[] nums = {2,3,1,4,2,5,3};
