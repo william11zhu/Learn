@@ -1,5 +1,7 @@
 package com.learn.list;
 
+import java.util.Stack;
+
 public class ListQuestions {
 	private class Node {
 		private int data;
@@ -242,6 +244,32 @@ public class ListQuestions {
 			head2=head2.next;
 		}
 		return null;
+	}
+	
+	/**
+	 * 逆序打印链表：循环
+	 * @param head
+	 */
+	public void printListReversingly_Iteratively(Node head){
+		Stack<Integer> stack = new Stack<Integer>();
+		while(head != null){
+			stack.push(head.data);
+			head = head.next;
+		}
+		
+		while(!stack.isEmpty()){
+			System.out.print(stack.pop()+",");
+		}
+	}
+	
+	/**
+	 * 逆序打印链表：递归
+	 * @param head
+	 */
+	public void printListReversingly_Recursively(Node head){
+		if(head == null) return;
+		printListReversingly_Recursively(head.next);
+		System.out.print(head.data+",");
 	}
 	
 	public static void main(String... args){
