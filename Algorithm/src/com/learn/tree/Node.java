@@ -4,6 +4,9 @@ public class Node<T> {
 	private T data;
 	private Node<T> left;
 	private Node<T> right;
+	
+	private int height;
+	
 	public T getData() {
 		return data;
 	}
@@ -22,7 +25,20 @@ public class Node<T> {
 	public void setRight(Node<T> right) {
 		this.right = right;
 	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
 	
+	public Node(){
+	}
 	
-	
+	public Node(T t){
+		this.data = t;
+		this.height = 0;
+		this.left = null;
+		this.right = null;
+	}
 }
