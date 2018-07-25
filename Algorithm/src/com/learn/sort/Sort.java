@@ -58,6 +58,7 @@ public class Sort {
 		
 		//遍历待排序列，将元素放入桶中
 		for(int k=0;k<data.length;k++) {
+			//桶的第一个元素经过计算是有序的
 			int num = (data[k] - min) / data.length;
 			bucket.get(num).add(data[k]);
 		}
