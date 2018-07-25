@@ -30,7 +30,12 @@ class IndexNode<T>{
 		this.right = right;
 	}
 }
-
+/**
+ * 剑指offer
+ * 面试题8：二叉树的下一个节点
+ * @author EX_WLJR_ZHUJIEJIAO
+ *
+ */
 public class IndexBinaryTree {
 	
 	public <T> IndexNode<T> createIndexBinaryTree(T data){
