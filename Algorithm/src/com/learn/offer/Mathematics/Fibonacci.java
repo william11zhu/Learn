@@ -1,4 +1,4 @@
-package com.learn.Mathematics;
+package com.learn.offer.Mathematics;
 
 public class Fibonacci {
 	public long fibonacci(int n){

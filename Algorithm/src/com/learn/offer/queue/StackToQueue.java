@@ -1,4 +1,4 @@
-package com.learn.queue;
+package com.learn.offer.queue;
 
 import java.util.Stack;
 
