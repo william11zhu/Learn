@@ -1,4 +1,4 @@
-package com.learn.tree;
+package com.learn.basic.tree;
 
 public class Node<T> {
 	private T data;

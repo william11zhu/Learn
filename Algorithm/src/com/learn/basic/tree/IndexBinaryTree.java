@@ -1,4 +1,4 @@
-package com.learn.tree;
+package com.learn.basic.tree;
 
 class IndexNode<T>{
 	private T data;

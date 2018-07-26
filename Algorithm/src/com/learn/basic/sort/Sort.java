@@ -1,4 +1,4 @@
-package com.learn.sort;
+package com.learn.basic.sort;
 
 import java.util.ArrayList;
 import java.util.Arrays;

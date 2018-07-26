@@ -1,4 +1,4 @@
-package com.learn.array;
+package com.learn.basic.array;
 
 public class DyadicArray {
 	private int[][] data;

@@ -1,4 +1,4 @@
-package com.learn.list;
+package com.learn.basic.list;
 
 import java.util.Stack;
 

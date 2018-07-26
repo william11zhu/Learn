@@ -1,4 +1,4 @@
-package com.learn.string;
+package com.learn.basic.string;
 
 public class ReplaceSpace {
 	public String replace(char[] cString){
